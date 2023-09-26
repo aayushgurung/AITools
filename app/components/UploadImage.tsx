@@ -49,13 +49,6 @@ const UploadImage = () => {
                 />
               </p>
             )}
-            {/* <p className="text-lg font-bold">
-              <FontAwesomeIcon
-                icon={faImage}
-                className="fa-regular fa-image fa-2xl"
-                style={{ color: "#959697" }}
-              />
-            </p> */}
             <button
               onClick={handleImageUpload}
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded mt-4"

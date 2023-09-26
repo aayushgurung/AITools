@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isDropdownVisible, setDropdownVisible] = useState<boolean[]>([]);
 
   const handleMouseEnter = (index: number) => {
-    const updatedVisibility = [...isDropdownVisible];
+    const updatedVisibility = Array(isDropdownVisible.length).fill(false);
     updatedVisibility[index] = true;
     setDropdownVisible(updatedVisibility);
   };
