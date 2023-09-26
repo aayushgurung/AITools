@@ -2,6 +2,7 @@ import React from 'react'
 
 const Banner = () => {
   return (
+    <>
     <section
     className="bg-indigo-600 hover:bg-indigo-700 mt-2 pt-12 pb-12 shadow-lg text-white"
   >
@@ -17,6 +18,7 @@ const Banner = () => {
       </p>
     </div>
   </section>
+  </>
   )
 }
 
