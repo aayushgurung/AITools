@@ -4,7 +4,7 @@ interface DropDownProps {
 }
 const DropdownMenu: React.FC<DropDownProps> = ({ items }) => {
   return (
-    <div className="dropdown-menu">
+    <div className="dropdown-menu z-10">
       <ul>
         {items.map((item, index) => (
           <li key={index}>
