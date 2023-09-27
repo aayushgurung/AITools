@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="bg-light mt-2">
       <div className="container mx-auto flex items-center justify-between">
-        <Link href="#" className="pl-20">
+        <Link href="/" className="pl-20">
           <Image
             src="/logo.png"
             alt="Logo"
@@ -42,7 +42,7 @@ const Navbar = () => {
             {isDropdownVisible[0] && (
               <DropdownMenu
                 items={[
-                  { href: "#", text: "Image Enhancer" },
+                  { href: "/image/image-enhancer", text: "Image Enhancer" },
                   { href: "#", text: "Compare Image" },
                   { href: "#", text: "Menu3" },
                 ]}
