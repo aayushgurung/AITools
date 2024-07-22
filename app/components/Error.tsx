@@ -1,19 +1,13 @@
 import React, { useState, useCallback, useEffect } from 'react';
 
 interface ErrorComponentProps {
-  error: string | null;
+  error?: string;
   onClose: () => void;
 }
 
 const ErrorComponent: React.FC<ErrorComponentProps> = ({ error, onClose }) => {
   const [visible, setVisible] = useState<boolean>(true);
     const autoCloseTime=5000;
-  const handleClose = useCallback(() => {
-    setVisible(false);
-    if (onClose) {
-      onClose();
-    }
-  }, [onClose]);
   useEffect(() => {
     if (autoCloseTime && autoCloseTime > 0) {
       const timer = setTimeout(() => {

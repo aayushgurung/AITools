@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+  reactStrictMode: true,
+  env: {
+    CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
+    CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
+    SERVER_NEXT: process.env.SERVER_NEXT,
+  },
+  images: {
+    domains: ['localhost'], 
+  },
+};
+module.exports = nextConfig;

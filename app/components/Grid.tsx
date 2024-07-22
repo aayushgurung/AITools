@@ -6,8 +6,8 @@ type GridProps = {
 
 const Grid: React.FC<GridProps> = ({ children }) => {
   return (
-    <div className="flex justify-center items-center p-4">
-      <div className="grid grid-cols-3 gap-4">{children}</div>
+    <div className="flex justify-center items-center py-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">{children}</div>
     </div>
   );
 };

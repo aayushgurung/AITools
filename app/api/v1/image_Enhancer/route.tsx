@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export const POST = async (req: Request) => {
   const data = await req.json();
-  const resdata = await fetch("http://localhost:5000/api/v1/enhance", {
+  const resdata = await fetch(`${process.env.PYTHON_SERVER}/enhance_image`, {
     method: "POST",
     headers: {
       "Content-type": "application/json",
